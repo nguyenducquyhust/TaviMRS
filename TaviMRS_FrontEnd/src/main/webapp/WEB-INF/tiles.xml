@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!--Trang Dang Nhap-->
+    <definition name="dang-nhap" template="/WEB-INF/layouts/dang_nhap.jsp"/>
+
+    <!-- Base Define -->
+    <definition name="base.definition"
+                template="/WEB-INF/layouts/index.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="header" value="/WEB-INF/basefragments/header.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/basefragments/footer.jsp"/>
+    </definition>
+
+    <!-- Danh sách doanh nghiệp  -->
+    <definition name="danh-sach-doanh-nghiep" extends="base.definition">
+        <put-attribute name="title" value="Danh sách doanh nghiệp"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/danh_sach_doanh_nghiep.jsp"/>
+    </definition>
+
+    <!-- Thông tin doanh nghiệp  -->
+    <definition name="thong-tin-doanh-nghiep" extends="base.definition">
+        <put-attribute name="title" value="Thông tin doanh nghiệp"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/thong_tin_doanh_nghiep.jsp"/>
+    </definition>
+
+    <!-- Danh sách xe chờ duyệt  -->
+    <definition name="danh-sach-xe-cho-duyet" extends="base.definition">
+        <put-attribute name="title" value="Danh sách xe chờ duyệt"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/danh_sach_xe_cho_duyet.jsp"/>
+    </definition>
+
+    <!-- Tổng hợp danh sách doanh nghiệp  -->
+    <definition name="tong-hop-danh-sach-doanh-nghiep" extends="base.definition">
+        <put-attribute name="title" value="Tổng hợp danh sách doanh nghiệp"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/tong_hop_danh_sach_doanh_nghiep.jsp"/>
+    </definition>
+
+    <!-- Tổng hợp danh sách doanh nghiệp  -->
+    <definition name="tong-hop-tru-luong-khai-thac" extends="base.definition">
+        <put-attribute name="title" value="Tổng hợp trữ lượng khai thác"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/tong_hop_tru_luong_khai_thac.jsp"/>
+    </definition>
+
+    <!-- Thông tin chi tiết xe vận chuyển  -->
+    <definition name="thong-tin-xe-van-chuyen" extends="base.definition">
+        <put-attribute name="title" value="Thông tin chi tiết xe vận chuyển"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/thong_tin_xe_van_chuyen.jsp"/>
+    </definition>
+
+    <!-- Thông tin chi tiết mỏ  -->
+    <definition name="thong-tin-mo" extends="base.definition">
+        <put-attribute name="title" value="Thông tin chi tiết mỏ"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/thong_tin_mo.jsp"/>
+    </definition>
+
+    <!-- Thông tin chi tiết giấy phép khai thác  -->
+    <definition name="thong-tin-giay-phep-khai-thac" extends="base.definition">
+        <put-attribute name="title" value="Thông tin chi tiết giấy phép khai thác"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/thong_tin_giay_phep_khai_thac.jsp"/>
+    </definition>
+
+    <!-- Thông tin chi tiết thiết bị  -->
+    <definition name="thong-tin-thiet-bi" extends="base.definition">
+        <put-attribute name="title" value="Thông tin chi tiết thiết bị"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/thong_tin_thiet_bi.jsp"/>
+    </definition>
+
+    <!-- Thông tin chi tiết người dùng  -->
+    <definition name="thong-tin-nguoi-dung" extends="base.definition">
+        <put-attribute name="title" value="Thông tin chi tiết người dùng"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/thong_tin_nguoi_dung.jsp"/>
+    </definition>
+
+    <!-- Thông tin chi tiết thủ tục  -->
+    <definition name="thong-tin-thu-tuc" extends="base.definition">
+        <put-attribute name="title" value="Thông tin chi tiết thủ tục"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/thong_tin_thu_tuc.jsp"/>
+    </definition>
+
+    <!-- Báo cáo tổng hợp vi phạm -->
+    <definition name="bao-cao-tong-hop-vi-pham" extends="base.definition">
+        <put-attribute name="title" value="Báo cáo tổng hợp vi phạm"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/bao_cao_tong_hop_vi_pham.jsp"/>
+    </definition>
+
+    <!-- Báo cáo lượng xe-->
+    <definition name="bao-cao-luong-xe" extends="base.definition">
+        <put-attribute name="title" value="Báo cáo lượng xe"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/bao_cao_luong_xe.jsp"/>
+    </definition>
+
+    <!-- Hình ảnh lưu trữ-->
+    <definition name="hinh-anh-luu-tru" extends="base.definition">
+        <put-attribute name="title" value="Hình ảnh lưu trữ"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/hinh_anh_luu_tru.jsp"/>
+    </definition>
+
+    <!-- Chi tiết hình ảnh lưu trữ-->
+    <definition name="chi-tiet-hinh-anh-luu-tru" extends="base.definition">
+        <put-attribute name="title" value="Chi tiết hình ảnh lưu trữ"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/chi_tiet_hinh_anh_luu_tru.jsp"/>
+    </definition>
+
+    <!-- Hình ảnh vi phạm-->
+    <definition name="hinh-anh-vi-pham" extends="base.definition">
+        <put-attribute name="title" value="Hình ảnh vi phạm"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/hinh_anh_vi_pham.jsp"/>
+    </definition>
+
+    <!-- Chi tiết hình ảnh vi phạm-->
+    <definition name="chi-tiet-vi-pham" extends="base.definition">
+        <put-attribute name="title" value="Chi tiết vi phạm"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/chi_tiet_vi_pham.jsp"/>
+    </definition>
+
+    <!-- Xem trực tuyến-->
+    <definition name="xem-truc-tuyen" extends="base.definition">
+        <put-attribute name="title" value="Xem trực tuyến"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/xem_truc_tuyen.jsp"/>
+    </definition>
+
+    <!-- Tra cuu thong bao-->
+    <definition name="tra-cuu-thong-bao" extends="base.definition">
+        <put-attribute name="title" value="Tra cứu thông báo"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/tra_cuu_thong_bao.jsp"/>
+    </definition>
+
+    <!-- Tra cuu thong bao-->
+    <definition name="tra-cuu-nguoi-dung" extends="base.definition">
+        <put-attribute name="title" value="Tra cứu người dùng"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/tra_cuu_nguoi_dung.jsp"/>
+    </definition>
+
+    <!-- Tra cuu thiet bi-->
+    <definition name="tra-cuu-thiet-bi" extends="base.definition">
+        <put-attribute name="title" value="Tra cứu thiết bị"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/tra_cuu_thiet_bi.jsp"/>
+    </definition>
+
+    <!-- Tra cuu xe van chuyen-->
+    <definition name="tra-cuu-xe-van-chuyen" extends="base.definition">
+        <put-attribute name="title" value="Tra cứu xe vận chuyển"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/tra_cuu_xe_van_chuyen.jsp"/>
+    </definition>
+
+    <!-- Tra cuu giay phep khai thac-->
+    <definition name="tra-cuu-giay-phep-khai-thac" extends="base.definition">
+        <put-attribute name="title" value="Tra cứu giấy phép khai thác"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/tra_cuu_giay_phep_khai_thac.jsp"/>
+    </definition>
+
+    <!-- Tra cuu thong tin doanh nghiep-->
+    <definition name="tra-cuu-doanh-nghiep" extends="base.definition">
+        <put-attribute name="title" value="Tra cứu doanh nghiệp"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/tra_cuu_doanh_nghiep.jsp"/>
+    </definition>
+
+    <!-- Tra cuu mo-->
+    <definition name="tra-cuu-mo" extends="base.definition">
+        <put-attribute name="title" value="Tra cứu mỏ"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/tra_cuu_mo.jsp"/>
+    </definition>
+
+    <!-- Gui thong bao-->
+    <definition name="gui-thong-bao" extends="base.definition">
+        <put-attribute name="title" value="Gửi thông báo"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/gui_thong_bao.jsp"/>
+    </definition>
+
+    <!-- Nhan bao cao-->
+    <definition name="nhan-bao-cao" extends="base.definition">
+        <put-attribute name="title" value="Nhận báo cáo"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/nhan_bao_cao.jsp"/>
+    </definition>
+
+    <!-- Man hinh theo doi-->
+    <definition name="man-hinh-theo-doi" extends="base.definition">
+        <put-attribute name="title" value="Màn hình theo dõi"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/man_hinh_theo_doi.jsp"/>
+    </definition>
+
+    <!-- Bieu do khoang san-->
+    <definition name="bieu-do-khoang-san" extends="base.definition">
+        <put-attribute name="title" value="Biểu đồ khoáng sản"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/bieu_do_khoang_san.jsp"/>
+    </definition>
+
+    <!-- Chi tiet bao cao-->
+    <definition name="chi-tiet-bao-cao" extends="base.definition">
+        <put-attribute name="title" value="Chi tiết báo cáo"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/chi_tiet_bao_cao.jsp"/>
+    </definition>
+
+    <!-- Chi tiet man hinh theo doi-->
+    <definition name="chi-tiet-man-hinh-theo-doi" extends="base.definition">
+        <put-attribute name="title" value="Chi tiết màn hình theo dõi"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/chi_tiet_man_hinh_theo_doi.jsp"/>
+    </definition>
+
+    <!-- Chi tiet xe van chuyen khoang san-->
+    <definition name="chi-tiet-xe-van-chuyen-khoang-san" extends="base.definition">
+        <put-attribute name="title" value="Chi tiết xe vận chuyển khoáng sản"/>
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/chi_tiet_xe_van_chuyen_khoang_san.jsp"/>
+    </definition>
+
+</tiles-definitions>
